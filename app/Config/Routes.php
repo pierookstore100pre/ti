@@ -10,7 +10,7 @@ use CodeIgniter\Router\RouteCollection;
  * En la Semana 11 se migrará a filtros de autorización.
  */
 $routes->group('', ['filter' => 'csrf'], static function (RouteCollection $routes) {
-
+   
     // ---------- Catálogo público (RF01-RF04) ----------
     $routes->get('/', 'Catalogo::index');
     $routes->get('catalogo', 'Catalogo::index');
